@@ -43,20 +43,19 @@
 |------|------|------|
 | Python | 3.11+ | 核心编程语言 |
 | Pandas | 最新 | 数据处理与分析 |
-| Matplotlib | 最新 | 数据可���化 |
+| Matplotlib | 最新 | 数据可视化 |
 | NumPy | 最新 | 数值计算 |
 
 ## 📦 项目结构
 
 ```
 ecommerce-analysis/
-├── README.md                 # 项目说明文档
-├── requirements.txt         # 依赖包列表
-├── analysis.py             # 主分析脚本
+├── README.md                            # 项目说明文档
+├── project1_source_data.py              # 源csv数据创建脚本
+├── project1-answer.py                   # 电商数据分析脚本
 ├── data/
-│   └── orders.csv          # 订单数据文件
-└── output/
-    └── analysis_report.html # 分析报告输出
+│   └── orders.csv                       # 订单数据文件
+└── 运行结果.png
 ```
 
 ## 🚀 快速开始
@@ -68,13 +67,13 @@ ecommerce-analysis/
 ### 安装依赖
 
 ```bash
-pip install -r requirements.txt
+pip install numpy pandas matplotlib
 ```
 
 ### 运行分析
 
 ```bash
-python analysis.py
+python project1-answer.py
 ```
 
 运行后会生成分析报告和可视化图表。
@@ -99,7 +98,7 @@ df = pd.read_csv('data/orders.csv')
 # 数据类型转换和清洗
 ```
 
-### 统计���析
+### 统计分析
 - 描述性统计
 - 聚合分析
 - 排序与排名
