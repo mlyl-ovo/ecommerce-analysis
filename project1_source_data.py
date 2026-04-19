@@ -18,7 +18,7 @@ for i in range(500):
 df = pd.DataFrame(data, columns=['订单日期', '商品类别', '销售额', '用户ID'])
 
 # 保存为 CSV
-df.to_csv('orders.csv', index=False, encoding='utf-8-sig')
+df.to_csv('data/orders.csv', index=False, encoding='utf-8-sig')
 print("数据已生成：orders.csv")
 print(f"共 {len(df)} 条订单")
 print(df.head())

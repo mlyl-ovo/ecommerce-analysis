@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-df=pd.read_csv("orders.csv")
+df=pd.read_csv("data/orders.csv")
 print(df.columns.to_list())
 print(f"一共有{df['订单日期'].count()}条订单")
 print(f"有{df['用户ID'].unique().size}个不同的用户")
